@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyawned Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap">
+    <style>
+        .area{  
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .circles{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 335vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        @keyframes animate {
+            0%{
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100%{
+                transform: translateY(-2500px) rotate(720deg);
+                opacity: 1;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div>
+            <h1 class="logo" onclick="location.href='./index.html'">Beyawned Technology</h1>
+            <p class="sub-logo">SOFTWARE DEVELOPMENT</p>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about-us">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div>
+            <h1 class="logo" onclick="location.href='./index.html'">Beyawned Technology</h1>
+            <p class="sub-logo">SOFTWARE DEVELOPMENT</p>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about-us" onclick="toggleMenu()">About</a></li>
+                <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+                <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div id="profile"> 
+        <div id="homepage-left" class="section__text">
+            <!-- <p class="section__text__p1">Hello, I'm</p> -->
+            <p class="title_profile">Ready to take<br>your business to the <br>nxt lvl?</p>
+            <p class="section__text__p2">Contact us for a free quote</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2 btn-anmiation" onclick="location.href='./services.html'">Pricing</button>
+                <button class="btn btn-color-2 btn-anmiation" onclick="location.href='./contact.html'">Contact</button>
+            </div>
+            
+            
+        </div>
+        <div id="homepage-right-paragraph" class="homepage-right-paragraph">
+            <p>We develop professional websites <br>
+                that not only showcase your business but also drives results. 
+                Our team of experienced developers and designers 
+                are dedicated to creating customized solutions that meet your unique needs.
+                <br> Whether you're a small business looking to establish an online presence
+                 or a larger corporation seeking to enhance your digital footprint, 
+                 we are here to help. With a focus on user experience and cutting-edge technology,
+                 we ensure your website not only looks great but also performs exceptionally well. 
+            </p>
+            <p id="final-paragraph">Partner with us and take your online presence to the next level.</p>
+        </div>
+        <!-- Sliding Diagonals -->
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+    </div>
+    <section class="about-us" id="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to <span class="highlight">Beyawned Technology</span>, where innovation meets excellence. Our team of skilled developers is dedicated to creating professional, customized websites that cater to the unique needs of each client. We pride ourselves on delivering high-quality solutions that help businesses thrive in the digital age.</p>
+        <p>With a focus on local businesses, we understand the importance of having a strong online presence. Our mission is to provide you with a website that not only looks great but also functions seamlessly, enhancing your brand and engaging your audience.</p>
+        <img src="assets/man_working.svg" alt="About Us Image">
+    </section>
+    <section id="why-choose-us">
+        <div class="whole_section">
+            <div class="heading">
+                <h1 class="title">Why choose us?</h1>
+            </div>
+            <div class="info-boxes about-containers">
+                <div id="info-box1" class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Reliability and Global Reach</h2>
+                    <div class="btn-container">
+                        <p>At Beyawned Technology, we prioritize reliability and global reach. With our use of international servers, your website is hosted on robust infrastructure that ensures uptime and performance, unaffected by regional power outages. We guarantee a seamless online presence, keeping your business accessible to clients worldwide.
+                        </p>
+                    </div>
+                </div>
+                <div id="info-box2" class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Client Satisfaction</h2>
+                    <div class="btn-container">
+                        <p>At Beyawned Technology, client satisfaction is our priority. We offer personalized support and tailored solutions to meet your unique business requirements. Our dedicated team ensures prompt responses, proactive maintenance, and ongoing support, empowering your business to thrive in the digital landscape. Partner with us for exceptional service and results-driven strategies.
+                        </p>
+                    </div>
+                </div>
+                <div id="info-box3" class="details-container color-container">
+                    <h2 class="experience-sub-title project-title">Cutting-Edge Technology</h2>
+                    <div class="btn-container">
+                       <p>Embracing cutting-edge technology, we integrate AI solutions to optimize your digital presence. From personalized user experiences to automated analytics and predictive insights, our AI-driven approach enhances efficiency and drives growth. Stay ahead of the curve with intelligent solutions tailored to your business needs.
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <footer>
+        <!-- Copying from animation.html page to all other pages -->
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#about-us">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Beyawned Technology. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

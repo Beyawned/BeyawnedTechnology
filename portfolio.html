@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Beyawned Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div>
+            <h1 class="logo" onclick="location.href='./index.html'">Beyawned Technology</h1>
+            <p class="sub-logo">SOFTWARE DEVELOPMENT</p>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#about-us">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div>
+            <h1 class="logo" onclick="location.href='./index.html'">Beyawned Technology</h1>
+            <p class="sub-logo">SOFTWARE DEVELOPMENT</p>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about-us" onclick="toggleMenu()">About</a></li>
+                <li><a href="services.html" onclick="toggleMenu()">Services</a></li>
+                <li><a href="portfolio.html" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="portfolio-header">
+        <h1 class="title">Our Portfolio</h1>
+        <p class="description">Take a look at some of the websites we have built for our clients, as well as designs that we plan to present to future clients.</p>
+    </div>
+    <div class="card-container">
+          <div class="card">
+            <img src="assets/customer-service-1-5.svg" alt="Client Website">
+            <div class="card-body">
+              <h2 class="card-title">Client Website</h2>
+              <p class="card-text">Thank you, <span class="highlight">Founders Group Marketing</span>, for trusting us with your website. We look forward to supporting your future digital needs!</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" target="_blank">View Live</a>
+              <a href="#" target="_blank">Contact</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/barber.svg" alt="Client Website">
+            <div class="card-body">
+                <h2 class="card-title">Client Website</h2>
+                <p class="card-text">Thank you, <span class="highlight">Kalips Barbershop</span>, for trusting us with your website. We look forward to supporting your future digital needs!</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" target="_blank">View Live</a>
+              <a href="#" target="_blank">Contact</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/doctor-1-33.svg" alt="Dental-image">
+            <!-- <img src="assets/Oral care.gif" alt="Client Website"> -->
+            <!-- <a href="https://storyset.com/health">Health illustrations by Storyset</a> -->
+            <div class="card-body">
+                <h2 class="card-title">Client Website</h2>
+                <p class="card-text">Thank you, <span class="highlight">Dr.K.Singh's Dental Practice</span>, for trusting us with your website. We look forward to supporting your future digital needs!</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" target="_blank">View Live</a>
+              <a href="#" target="_blank">Contact</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/fitness-15.svg" alt="Client Website">
+            <div class="card-body">
+              <h2 class="card-title">Proposal Website</h2>
+              <p class="card-text">This card features a website design proposal for a gym. Explore the key elements that cater to fitness enthusiasts and gym members.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" target="_blank">View Live</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+    </div>
+    <div id="portfolio-page-animation" class="area" >
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <footer>
+        <!-- Copying from animation.html page to all other pages -->
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="index.html#about-us">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Beyawned Technology. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
